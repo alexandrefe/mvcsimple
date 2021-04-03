@@ -1,0 +1,17 @@
+{% extends 'site/layout/master.html' %}
+
+{% block content %}
+
+<h1>Listagem de produtos e preços</h1>
+
+{% for product in products %}
+
+    <ul>
+        <li>{{ product.product_name }}</li>
+        <li>{{ product.product_price }}</li>
+    </ul>
+
+{% endfor %}
+
+
+{% endblock %}
